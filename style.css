@@ -1,0 +1,58 @@
+html{
+   box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    background-color: #45badd;
+}
+.text
+{
+    margin: 0;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    color: #ff3482;
+}
+.container{
+    height: 100vh;
+    width:  100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(./robot.gif);
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+button{
+    cursor: pointer;
+    outline: none;
+    height: 50px;
+    width: 200px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: white;
+    background: #ff3482;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+}
+@media screen and (max-width: 1000px) {
+    .container{
+        background-position: center center;
+        background-size: cover;
+    }
+}
+button:hover{
+    filter: brightness(95%);
+}
+
+button:active{
+    transform: scale(0.90);
+}
+button:disabled{
+    cursor: default;
+    filter: 30%;
+}
